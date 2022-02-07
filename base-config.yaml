@@ -1,0 +1,14 @@
+# List of invite groups.
+# Each group must have a minimum of 1 room_ids entry and 1 auth_tokens entry but there is no maximum number entries.
+# Any matching token in the auth_tokens list will result in an invite being sent for every entry in the room_ids list.
+# Tokens are any random string used as a shared secret.
+invite_groups:
+  -
+    room_ids:
+      - '!XxGWpPSDemmFHBofbR:example.com'
+    auth_tokens:
+      - 'EXAMPLEauthTOKEN'
+
+# Users that may use the '!config' command
+admin_users:
+  - '@user:example.com'
